@@ -5,6 +5,6 @@ def call(String OPENSHIFT_CREDENTIALS_ID, String OPENSHIFT_PROJECT, String CLUST
     }
 
     // Apply all YAML files in the 'openshift' directory to the OpenShift cluster
-    // sh "oc apply -f openshift --namespace=${OPENSHIFT_PROJECT}"
-    sh "oc new-app omarrouby/ivolve-app:4 --namespace=${OPENSHIFT_PROJECT}"
+    sh "oc apply -f openshift --namespace=${OPENSHIFT_PROJECT}"
+    
 }
