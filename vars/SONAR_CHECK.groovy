@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 def call() { 
     echo "Running SonarQube"
-    withSonarQubeEnv(credentialsId: 'sonar') {
+    withSonarQubeEnv(credentialsId: 'sonarqube-token') {
         echo "Running SonarQube Analysis..."
         sh ''' 
         $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=MULTICLOUD \
